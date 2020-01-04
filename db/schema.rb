@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 2019_12_31_035841) do
 
   create_table "games", force: :cascade do |t|
     t.string "title"
-    t.string "release_date"
-    t.string "rating"
+    t.datetime "release_date"
+    t.integer "rating"
     t.string "console"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
